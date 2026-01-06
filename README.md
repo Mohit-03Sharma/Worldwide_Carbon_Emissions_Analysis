@@ -1,41 +1,188 @@
-ANALYZING CARBON EMISSION TRENDS IN ALIGNMENT WITH NET ZERO EMISSION:
+# Worldwide Carbon Emissions Analysis (City-Level)
 
-Concept of the Project: Climate change poses a critical threat to the global environment, economies, and communities. In response, the UN Sustainable Development Goals (SDGs) and the Paris Agreement have set ambitious targets for reducing greenhouse gas emissions and achieving net zero emissions. This project aims to develop a data analytics prediction model to analyze and forecast emission data from major cities worldwide. By leveraging advanced data analytics tools and methodologies, the project seeks to propose actionable solutions to support the Net Zero Emission goals of the Paris Agreement and Decarbonization which involves the reduction of carbon dioxide emissions through various means, such as transitioning to renewable energy sources, improving energy efficiency, and adopting sustainable practices across industries, aligning with two Sustainability Development Goals (SDG 13): Climate Action and (SDG 11): Sustainable Cities and Communities.
+> Data analytics and machine learning project exploring city-level greenhouse gas emissions (2019–2023) with geospatial mapping and predictive forecasting
 
-Problem Statement: Metropolises and downtown areas are the bustling hearts of our world, yet they are also hotspots for greenhouse gas emissions, driven by relentless industrial activities, heavy transportation, and voracious energy consumption. These emissions accelerate climate change, triggering severe environmental and health crises. Despite global initiatives like the Paris Agreement, the path to net-zero emissions is riddled with obstacles, mainly due to imprecise data and ineffective policies. This project aims to transform this narrative. By diving deep into emission data, we aim to uncover hidden patterns, accurately predict future emission trajectories, and devise smart, targeted interventions to drastically cut emissions in major cities. Through cutting-edge analytics and bold strategies, we aspire to craft a blueprint for a sustainable and vibrant urban future.
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-Geospatial-00D4FF.svg)](https://plotly.com/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange.svg)](https://scikit-learn.org/)
 
-Objective of the Project: The principal aim of this project is to develop a Multifaceted Data Analytics Prediction Model to analyze and forecast emission data from major cities worldwide. Our goal is to propose data-driven solutions that support the net-zero emission targets of the Paris Agreement in alignment with the SDGs. This includes analyzing the dataset of "City-Wise Emissions" assessing current progress and predicting which countries can reduce their emissions by 45% by 2030 and up to 100% by 2050. By leveraging this predictive model, we aim to provide actionable insights and strategies to help cities achieve significant emission reductions and contribute to a sustainable global future. Precisely it includes:
+Comprehensive analysis of city-level emissions data identifying trends aligned with **Net Zero targets** and **UN SDGs 11 & 13**. Features interactive geospatial visualizations and baseline forecasting models.
 
-The collection of emission data from CDP( Carbon Disclosure Project) for the years 2019 to 2023. To pinpoint the main sources and patterns of emissions in urban regions. To analyze the temporal and spatial trends of emissions. To create predictive models for future emission levels using historical data. To suggest practical solutions and policy recommendations to reach net-zero emissions. To evaluate the potential impact of these solutions on achieving SDG 13 and SDG 11.
+---
 
-Features and Functions: Here are some key highlights of the project:
+## Project Highlights
 
-Source Identification: Information on potential sources of emissions (e.g., industrial, vehicular, residential).
-Location and Mapping: Geographic coordinates of the monitoring stations.
-GreenHouse Emissions: Tracking levels of various greenhouse gases such as CO2, CH4, N2O, etc.
-Time: Temporal data including the date and time of the recordings.
-Dashboarding: Creating a live dashboard for comprehensive visualizations
-Tech-Stack for Analysis: The following tools and technologies will be used for data analysis:
+- **Multi-year analysis** — Cleaned and analyzed emissions data spanning 2019–2023
+- **Interactive geospatial mapping** — Choropleth visualizations comparing regions and cities
+- **Trend identification** — Surfaced high-emitting hotspots and temporal patterns
+- **Predictive modeling** — Baseline forecasting model for emissions trajectories
+- **Sustainability alignment** — Insights connected to Net Zero goals and UN SDGs 11 & 13
 
-Python: For data cleaning, analysis, and visualization, using libraries such as Pandas, NumPy, and Matplotlib.
-Jupyter Notebooks: For documenting the analysis process and visualizations.
-Python Libraries for prediction modeling: For developing predictive models and machine learning algorithms.
-Plotly: For spatial analysis and creating geographic visualizations of emission data.
-PowerBI: For creating interactive dashboards and visualizations to present the findings.
-Methodology: The project will be conducted in the following phases:
+---
 
-Data Collection: Gathering and compiling emission data from the above-mentioned sources.
-Data Understanding: Accessing the content and quality of gathered data.
-Data Preparation: Integrating datasets from different sources and cleaning the data according to requirements using processes like transformation, normalization, etc.
-Exploratory Data Analysis (EDA): Conducting descriptive statistical analysis to grasp the distribution and variability of emissions, and visualizing temporal trends and spatial distributions using charts and maps.
-Predictive Modeling: Developing machine learning models (e.g., linear regression, time series model) to predict future emission levels based on historical data.
-Solution Conceptualization: Leveraging the analysis, propose solutions such as implementing stricter emission regulations, promoting renewable energy, and advancing sustainable transportation. Additionally, evaluate the feasibility and potential impact of these proposed solutions.
-Reporting and Presentation: Compiling the findings into a comprehensive report and creating visualizations and interactive dashboards to present the results.
-Expected Outcomes:
+## Notebooks Overview
 
-Comprehensive Analysis: A detailed analysis of emission data identifying key sources and trends of urban emissions.
-Predictive Models: Reliable models for predicting future emission levels and assessing the impact of potential interventions.
-Actionable Solutions: Data-driven solutions and policy recommendations to reduce emissions and achieve net zero goals.
-Impact Assessment: Evaluation of the potential impact of proposed solutions on achieving SDG 13, SDG 11, and the Paris Agreement targets.
-Awareness and Engagement: Increased awareness among stakeholders about the sources and impacts of urban emissions, and the benefits of proposed interventions.
-By tackling urban emissions with data-driven solutions, this project aims to advance net zero emissions and foster sustainable cities, supporting the Paris Agreement, SDG 13: Climate Action, and SDG 11.
+Explore the analysis in this recommended order:
+
+### 1. Core Analysis & Visualizations
+**`notebooks/01_central_idea_visualisations.ipynb`**
+- Exploratory data analysis
+- Year-over-year emissions trends
+- City/country comparisons
+- Top emitters identification
+
+### 2. Geospatial Mapping
+**`notebooks/02_choropleth_visualization.ipynb`**
+- Interactive choropleth maps
+- Geographic pattern analysis
+- Regional emission distributions
+
+### 3. Predictive Modeling
+**`notebooks/03_prediction_model.ipynb`**
+- Baseline forecasting model
+- Model training and evaluation
+- Future emissions projections
+
+---
+
+## Key Outputs
+
+- **Temporal analysis** — Year-over-year emissions movement and trends
+- **Comparative insights** — City and country-level comparisons
+- **Geographic patterns** — Choropleth maps revealing spatial distributions
+- **Forecasts** — Predicted emission trajectories with model metrics
+
+### Sample Visualizations
+
+> **Note:** Add 2–3 key screenshots to `reports/figures/` and display them here for maximum impact
+```markdown
+![Emissions Trends](reports/figures/emissions_trends.png)
+![Choropleth Map](reports/figures/choropleth_map.png)
+![Model Predictions](reports/figures/predictions.png)
+```
+
+
+## Dataset
+
+City-level greenhouse gas emissions data covering **2019–2023**.
+
+**Setup instructions:**
+1. Obtain the dataset (if not included in repository)
+2. Place raw files in `data/raw/`
+3. Processed/cleaned data will be saved to `data/processed/`
+4. Update notebook paths if needed
+
+> Dataset source information should be added here when available
+
+---
+
+## Quick Start
+
+### Prerequisites
+- Python 3.x
+- Jupyter Notebook
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/Mohit-03Sharma/Worldwide_Carbon_Emissions_Analysis.git
+cd Worldwide_Carbon_Emissions_Analysis
+```
+
+2. **Create virtual environment and install dependencies**
+```bash
+python -m venv .venv
+
+# Windows:
+.venv\Scripts\activate
+
+# macOS/Linux:
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+3. **Launch Jupyter Notebook**
+```bash
+jupyter notebook
+```
+
+4. **Run notebooks in sequence**
+- Start with `01_central_idea_visualisations.ipynb`
+- Continue with `02_choropleth_visualization.ipynb`
+- Finish with `03_prediction_model.ipynb`
+
+---
+
+## Tech Stack
+
+**Core:** Python 3.x  
+**Data Processing:** pandas, NumPy  
+**Visualization:** Plotly, matplotlib  
+**Machine Learning:** scikit-learn  
+**Environment:** Jupyter Notebook
+
+---
+
+## Roadmap (Industry-Level Enhancements)
+
+### Code Organization
+- [ ] Refactor into modular `src/` pipeline (preprocess → train → evaluate)
+- [ ] Add automated testing suite
+- [ ] Implement logging and error handling
+
+### Model Improvements
+- [ ] Time-aware validation (train on years 2019-2022, validate on 2023)
+- [ ] Model comparison: Linear/ElasticNet vs tree-based vs XGBoost/LightGBM
+- [ ] Hyperparameter tuning with cross-validation
+- [ ] Ensemble methods for improved accuracy
+
+### Tracking & Deployment
+- [ ] Experiment tracking with MLflow or metrics.json
+- [ ] CI/CD pipeline for automated model training
+- [ ] Interactive Streamlit dashboard with:
+  - Dynamic filters (city, region, year)
+  - Interactive maps
+  - Real-time forecast visualization
+
+---
+
+## Project Context
+
+This project demonstrates end-to-end data science capabilities including:
+
+- **Data wrangling** — Cleaning and structuring multi-year city-level data
+- **Exploratory analysis** — Uncovering patterns and trends in emissions
+- **Geospatial visualization** — Communicating insights through interactive maps
+- **Predictive modeling** — Building baseline forecasting models
+- **Sustainability impact** — Connecting analysis to global climate goals
+
+**Relevance to UN Sustainable Development Goals:**
+- **SDG 11:** Sustainable Cities and Communities
+- **SDG 13:** Climate Action
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page or submit a pull request.
+
+---
+
+## Contact
+
+**Mohit Sharma**  
+GitHub: [@Mohit-03Sharma](https://github.com/Mohit-03Sharma)
+
+---
+
+<div align="center">
+  <sub>Built with 🌍 for a sustainable future</sub>
+</div>
