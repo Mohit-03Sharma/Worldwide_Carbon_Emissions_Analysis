@@ -54,7 +54,6 @@ Explore the analysis in this recommended order:
 
 ### Sample Visualizations
 
-> **Note:** Add 2–3 key screenshots to `reports/figures/` and display them here for maximum impact
 ```markdown
 ![Emissions Trends](reports/figures/emissions_trends.png)
 ![Choropleth Map](reports/figures/choropleth_map.png)
