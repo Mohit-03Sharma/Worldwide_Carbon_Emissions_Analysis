@@ -1,4 +1,4 @@
-# Worldwide Carbon Emissions Analysis (City-Level)
+# Worldwide Carbon Emissions Analysis 
 
 > Data analytics and machine learning project exploring city-level greenhouse gas emissions (2019–2023) with geospatial mapping and predictive forecasting
 
